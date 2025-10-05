@@ -5,9 +5,11 @@ import java.util.Map;
 
 public class SubArraySumEqlsK {
     public static void main(String[] args) {
-
+        int[] nums = {2,3,-5,5,-5,1,4};
+        int result = subArraySum(nums, 5);
+        System.out.println( result );
     }
-    public int subArraySum(int[] nums, int k){
+    static int subArraySum(int[] nums, int k){
         int result = 0, prefixSum = 0;
         Map<Integer, Integer> sumCountMap = new HashMap<>();
         sumCountMap.put(0,1);
